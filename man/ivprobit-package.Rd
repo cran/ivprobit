@@ -3,32 +3,24 @@
 \alias{ivProbit}
 \docType{package}
 \title{
-Instrumental variables probit model 
+Instrumental Variables Probit Model
 }
 \description{
-ivprobit fit an Instrumental variables probit model using the generalized least squares estimator 
+In this package we compute the instrumental variables probit model using the generalized least squares estimator. This package comprises function that deal with endogeneity misspecification especially when correlation between regressors and error term is determinited and which produce inconsistent results.  
 }
 \details{
 \tabular{ll}{
 Package: \tab ivprobit\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-09-18\cr
-License: \tab Artistic-2.0\cr
+Version: \tab 1.1\cr
+Date: \tab 2018-02-21\cr
+License: \tab GPL-3\cr
 }
 }
 
 \author{
-Zaghdoudi Taha
+Taha Zaghdoudi
 
-Zaghdoudi Taha <zedtaha@gmail.com>
+Taha Zaghdoudi <zedtaha@gmail.com>
 
-}
-
-\examples{
-#load data
-dat<-system.file("data","eco.RData",package="ivprobit")
-load(dat)
-pro<-ivprobit(d2~ltass+roe+div,cbind(eqrat,bonus)~ltass+roe+div+gap+cfa,mydata)
-summary(pro)
 }
